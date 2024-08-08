@@ -1,0 +1,12 @@
+{
+  "extends": "next/core-web-vitals",
+  "plugins": [
+    "@typescript-eslint" // Nếu bạn đang sử dụng TypeScript
+  ],
+  "parser": "@typescript-eslint/parser", // Nếu bạn đang sử dụng TypeScript
+  "rules": {
+    "no-console": "warn",
+    "no-unused-vars": "warn",
+    "@typescript-eslint/explicit-module-boundary-types": "off" // Ví dụ quy tắc cho TypeScript
+  }
+}
