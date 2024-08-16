@@ -55,6 +55,7 @@ const Login = ({
       Cookies.set("access_token", response.data.login.accessToken);
       setOpen(false);
       reset();
+      window.location.reload();
     }
   };
 

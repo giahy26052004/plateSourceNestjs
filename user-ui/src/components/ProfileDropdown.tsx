@@ -35,6 +35,7 @@ const ProfileDropdown = () => {
   const handleLogout = () => {
     Cookies.remove("access_token");
     Cookies.remove("refresh_token");
+    signOut();
     toast.success("Logout successfully");
     // logout logic here
     window.location.reload();
@@ -67,10 +68,7 @@ const ProfileDropdown = () => {
             <DropdownItem key="team_setting">
               Apply for seller account
             </DropdownItem>
-            <DropdownItem
-              key="logout"
-              onClick={() => signOut() || handleLogout()}
-            >
+            <DropdownItem key="logout" onClick={() => handleLogout()}>
               Logout
             </DropdownItem>
           </DropdownMenu>
