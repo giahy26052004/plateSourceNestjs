@@ -1,5 +1,5 @@
 NestJS, NextJS, TypeScript, Tailwindcss,MongoDB 
-// AuthUser (mailer,google )
+// AuthUser (mailer,googleAuth)
 // UI NextJS
 # Start //
 update .env 
